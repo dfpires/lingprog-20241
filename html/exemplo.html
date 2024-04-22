@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Página HTML</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo de Página HTML</title>
+    </head>
+    <body>
+        <section>
+            <!-- Exemplo de Link -->
+            <h2>Exemplo de Link:</h2>
+            <a href="http://www.uol.com.br">Visite o site da UOL</a>
+        </section>
+        <section>
+            <!-- Exemplo de Imagem -->
+            <h2>Exemplo de Imagem:</h2>
+            <img src="img/sfitc3.png" alt="Imagem de exemplo">
+        </section>
+        <section>
+            <!-- Exemplo de Multimídia -->
+            <h2>Exemplo de Multimídia:</h2>
+            <iframe width="300" height="300" 
+                    src="https://www.youtube.com/embed/TNTvb60LZUU?si=Xfz3xqUne9XIUvjC" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+            </iframe>
+        </section>
+        <section>
+            <!-- Exemplo de Lista -->
+            <h2>Exemplo de Lista:</h2>
+            <ul> <!-- unorded list-->
+                <li>Item 1</li> <!-- list item -->
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </section>
+        <section>
+            <!-- Exemplo de Tabela -->
+            <h2>Exemplo de Tabela:</h2>
+            <table border="1">
+                <tr> <!-- table row -->
+                    <th>Nome</th> <!-- table header-->
+                    <th>Idade</th>
+                </tr>
+                <tr>
+                    <td>João</td> <!-- table data -->
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td> José </td>
+                    <td> 19 </td>
+                </tr>
+            </table>
+        </section>
 
-    <!-- Exemplo de Link -->
-    <h2>Exemplo de Link:</h2>
-    <a href="https://www.example.com">Visite o site exemplo</a>
-    <br><br>
+        <!-- Exemplo de Formulário -->
+        <section>
+            <h2>Exemplo de Formulário:</h2>
+            <form action="submit.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+                <label for="senha"> Senha: </label>
+                <input type="password" id="senha" name="senha"/>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
 
-    <!-- Exemplo de Imagem -->
-    <h2>Exemplo de Imagem:</h2>
-    <img src="https://via.placeholder.com/150" alt="Imagem de exemplo">
-    <br><br>
+        <!-- Exemplo de Comentário -->
+        <!-- Este é um exemplo de comentário em HTML -->
 
-    <!-- Exemplo de Multimídia -->
-    <h2>Exemplo de Multimídia:</h2>
-    <video width="320" height="240" controls>
-        <source src="movie.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-    </video>
-    <br><br>
-
-    <!-- Exemplo de Lista -->
-    <h2>Exemplo de Lista:</h2>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
-    <br>
-
-    <!-- Exemplo de Tabela -->
-    <h2>Exemplo de Tabela:</h2>
-    <table border="1">
-        <tr>
-            <th>Nome</th>
-            <th>Idade</th>
-        </tr>
-        <tr>
-            <td>João</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>Maria</td>
-            <td>25</td>
-        </tr>
-    </table>
-    <br>
-
-    <!-- Exemplo de Formulário -->
-    <h2>Exemplo de Formulário:</h2>
-    <form action="submit.php" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome">
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <br><br>
-        <input type="submit" value="Enviar">
-    </form>
-    <br>
-
-    <!-- Exemplo de Comentário -->
-    <!-- Este é um exemplo de comentário em HTML -->
-
-</body>
+    </body>
 </html>

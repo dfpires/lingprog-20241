@@ -1,0 +1,13 @@
+.box{
+    width: 200px; /* largura da div */
+    padding: 20px; /* preenchimento ou espaçam. interno */
+    border: 2px solid black; /* borda de espessura 2px, preta */
+    margin: 10px; /* espaçamento externo */
+    text-align: center; /* alinha o texto da div */    
+}
+
+p{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+}

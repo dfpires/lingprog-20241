@@ -1,0 +1,15 @@
+.container {
+    display: flex; /* layout flexível */
+}
+.sidebar {
+    flex: 1; /* ocupa 1 fração na página - horizontalmente */
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 500px;
+}
+.main-content {
+    flex: 3; /* ocupa 3 frações */
+    background-color: #e0e0e0;
+    padding: 20px;
+    height: 500px;
+}
