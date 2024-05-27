@@ -210,5 +210,78 @@ function exe8(){
         notas.push(Number(prompt(`Informe a média do aluno ${i+1}`)))
     }
     // percorre o vetor para calcular e mostra o nome do aluno com maior média
+    let maiorMedia = notas[0]
+    notas.forEach( (elemento) => {
+        if (elemento > maiorMedia ){
+            maiorMedia = elemento
+        }
+    })
+    let indiceMaiorNota = notas.indexOf(maiorMedia)
+    let nomeMaiorMedia = nomes[indiceMaiorNota]
+    console.log(`Maior média ${maiorMedia} do aluno ${nomeMaiorMedia}`)
     
+    // calcular e informar a nota do exame para aprovação
+    notas.forEach( (elemento) => {
+        if (elemento < 7){
+            console.log(`A média ${elemento} precisa ter nota ${10 - elemento}`)
+        }
+    })
+}
+
+function exe9(){
+    let nomes = []; let codigos = []; let precos = []
+    for(let i=0;i<10;i++){
+        nomes.push(prompt("Informe o nome do produto"))
+        codigos.push(Number(prompt("Informe o código do produto")))
+        precos.push(Number(prompt("Informe o preço do produto")))
+    }
+    // fazer o acréscimo - para cada elemento do vetor códigos
+    codigos.forEach( (elemento, posicao) => {
+        if ((elemento % 2 == 0) && (precos[posicao] > 1000)){
+            precos[posicao] =  precos[posicao] * 1.20
+        }
+        else if (elemento % 2 == 0){
+            precos[posicao] =  precos[posicao] * 1.15
+        }
+        else if (precos[posicao] > 1000){
+            precos[posicao] =  precos[posicao] * 1.10
+        }
+    })
+    console.log(nomes); console.log(codigos); console.log(precos);
+}
+function exe10(){
+    // entrada de dados
+    let vetor1 = []; let vetor2 = []
+    for(let i=0;i<10;i++){
+        vetor1.push(Number(prompt("Informe um número do vetor 1")))
+    }
+    for(let i=0;i<5;i++){
+        vetor2.push(Number(prompt("Informe um número do vetor 2")))
+    }    
+    // cria o vetor resultante 1
+    let result1 = []
+    let somaVet2 = 0
+    // soma os elementos de vetor2
+    vetor2.forEach( (elemento) => {
+        somaVet2 += elemento // somaVet2 = somaVet2 + elemento
+    })
+    // percorre o vetor1
+    vetor1.forEach( (elemento) => {
+        if (elemento % 2 == 0){ // se for par
+            result1.push(elemento + somaVet2) // soma par + somaVet1
+        }
+    })
+    // cria o vetor resultante 2
+    let result2 = []
+    vetor1.forEach( (elementoVetor1) => { // para cada elemento
+        if (elementoVetor1 % 2 == 1){ // é impar
+            let conta = 0 // conta os divisores
+            vetor2.forEach( (elementoVetor2) => {
+                if (elementoVetor1 % elementoVetor2 == 0){
+                    conta++
+                }
+            })
+            result2.push(conta) // adiciona em result2
+        }
+    })
 }
